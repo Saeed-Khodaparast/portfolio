@@ -1,0 +1,155 @@
+.about_me {
+  width: 100%;
+  padding: 3.75rem 0;
+}
+
+.about_me .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+/* ------------------------------ */
+
+.about_me .right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.about_me .right h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.about_me .right p {
+  width: 27rem;
+  margin: 1rem 0 0 0;
+  text-align: justify;
+  color: var(--text_color_secondary);
+}
+
+.about_me .right ul {
+  width: 27rem;
+  margin: 1.5rem 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about_me .right li {
+  margin: 0;
+  display: flex;
+}
+
+.about_me .right li a {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.about_me .right span.details {
+  width: 6.1rem;
+  color: var(--text_color_secondary);
+}
+
+.about_me .right p,
+.about_me .right span.details,
+.about_me .right span.details_value {
+  font-size: 0.95rem;
+}
+
+/* ------------------------------ */
+
+.about_me .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.about_me .left img {
+  max-width: 100%;
+  border-radius: 2rem;
+  background: linear-gradient(
+    160deg,
+    var(--grey_color) 0%,
+    var(--grey_variant_one) 91%
+  );
+}
+
+/* ------------------------------ */
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .about_me .container {
+    flex-direction: column;
+  }
+
+  .about_me .right,
+  .about_me .left {
+    width: 100%;
+  }
+
+  .about_me .right {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about_me .right p {
+    margin: 1.1rem 0 0 0;
+  }
+
+  .about_me .left {
+    justify-content: center;
+  }
+
+  .about_me .left img {
+    width: 30rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about_me {
+    padding: 2.5rem 0;
+  }
+
+  .about_me .container {
+    gap: 3.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about_me .right h2 {
+    font-size: 1.4rem;
+  }
+
+  .about_me .right p,
+  .about_me .right ul {
+    width: 100%;
+  }
+
+  .about_me .right li a {
+    width: 100%;
+  }
+
+  .about_me .right span.details_value {
+    width: 100%;
+  }
+
+  .about_me .right p,
+  .about_me .right span.details,
+  .about_me .right span.details_value {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .about_me .right h2 {
+    font-size: 1.2rem;
+  }
+}

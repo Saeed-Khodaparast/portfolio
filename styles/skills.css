@@ -1,0 +1,197 @@
+.skills {
+  width: 100%;
+  padding: 3.75rem 0;
+}
+
+.skills .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* -------------------------- */
+
+.skills .title {
+  text-align: center;
+}
+
+.skills .title span {
+  margin-top: 1.5rem;
+  padding: 0 2rem;
+  display: inline-block;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--text_color_secondary);
+}
+
+/* -------------------------- */
+
+.skills .content {
+  width: 100%;
+  margin-top: 2.5rem;
+  padding: 1.5rem 3rem 3rem;
+  display: flex;
+  box-sizing: border-box;
+  gap: 4rem;
+  align-items: center;
+  background-color: var(--grey_color);
+}
+
+.skills .content .right,
+.skills .content .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.skills .content .item {
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  direction: ltr;
+}
+
+.skills .content .item .skill_title {
+  margin-top: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills .content .item .skill_title span {
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.skills .content .item .skill_bar {
+  width: 100%;
+  margin: 0.5rem 0 0 0;
+  border-radius: 1.875rem;
+  background-color: var(--grey_variant_one);
+  height: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.skills .content .item .skill_bar span::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color_primary);
+}
+
+.skills .content .item .skill_bar span.five::after {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 95%;
+}
+
+.skills .content .item .skill_bar span.ninety::after {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 10%;
+}
+
+.skills .content .item .skill_bar span.tenty::after {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 90%;
+}
+
+.skills .content .item .skill_bar span.twenty::after {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 80%;
+}
+
+.skills .content .item .skill_bar span.thirty::after {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 70%;
+}
+
+.skills .content .item .skill_bar span.fourty::after {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 60%;
+}
+
+.skills .content .item .skill_bar span.fifty::after {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+}
+
+.skills .content .item .skill_bar span.sixty::after {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 40%;
+}
+
+.skills .content .item .skill_bar span.seventy::after {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 30%;
+}
+
+.skills .content .item .skill_bar span.eighty::after {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 20%;
+}
+
+/* -------------------------- */
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  .skills .content {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .skills .content .right,
+  .skills .content .left {
+    width: 100%;
+    margin: 0.3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  .skills .title {
+    font-size: 0.9rem;
+  }
+
+  .skills .title span {
+    padding: 0 0.5rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .skills .title {
+    font-size: 0.8rem;
+  }
+
+  .skills .content {
+    margin-top: 2.5rem;
+    padding: 0.6rem 2rem 1.6rem;
+  }
+}
